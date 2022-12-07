@@ -1,0 +1,76 @@
+.main {
+    margin-top: rem(150);
+
+    &__motive{
+        display: flex;
+        flex-direction: column;
+        
+        &-title{
+            font-size: rem(20);
+            font-weight: bold;
+            margin: rem(20);
+            text-align: center;
+            text-transform: uppercase;
+            @media all and (min-width: 760px ){
+                font-size: rem(40);
+                margin: rem(20);
+            }
+        }
+    
+        &-desc {
+        margin-left: $marginLeft;
+        font-size: rem(15);
+        margin-right: $marginRight;
+        text-align: center;
+        margin-bottom: rem(20);
+
+        @media all and (min-width: 760px ){
+            font-size: rem(30);
+            margin: rem(20);
+            text-align: start;
+        }
+    }   
+}
+    &__aboutUs{
+        display: flex;
+        flex-direction: column;
+        margin-left: $marginLeft;
+        margin-right: $marginRight;
+        
+        gap: rem(5);
+       &-title {
+        text-align: center;
+        font-size: rem(20);
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: rem(20);
+
+       }
+       &-info{ 
+        text-align: center;
+       }
+       &-desc{
+        text-align: center;
+        margin-bottom: rem(10);
+       } 
+       &_box {
+        display: flex;
+        justify-content:space-evenly;
+        margin-bottom: rem(20);
+        &-Raquel{
+            
+        }
+        &-Raquel1 {
+            margin-right: rem(10);
+            font-size: rem(25);
+        }
+        &-Lucia{
+            
+        }
+        &-Lucia1 {
+            margin-right: rem(10);
+            font-size: rem(25); 
+        }
+       }
+    }
+}

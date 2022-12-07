@@ -1,0 +1,35 @@
+.header{
+    // position: relative;
+    &__img{
+        position: absolute;
+        left: rem(5);
+        top:rem(5);
+        width: rem(150);
+        height: rem(150);
+        margin-left: $marginLeft;
+    }
+    &__menu{
+        position: absolute;
+        right: rem(5);
+        top:rem(5);
+    }
+    &__nav{
+        
+        &_list{
+            display: none;
+            @media all and (min-width:768px){
+                display: flex;
+                gap: rem(10);
+                margin-right: $marginRight;
+            }
+            
+            &-element{
+                color: black;
+                font-size: rem(20);
+                padding: rem(10);
+                margin: rem(10);
+            }
+        }
+
+    }
+}
